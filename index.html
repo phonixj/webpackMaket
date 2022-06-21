@@ -62,9 +62,9 @@
         </div>
         <nav class="page-nav">
           <ul class="page-nav__list">
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Ремонтируемые бренды</a></li>
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Ремонтируемые устройства</a></li>
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Цены на услуги</a></li>
+              <li class="page-nav__item"><a href="#brands" class="page-nav__link">Ремонтируемые бренды</a></li>
+              <li class="page-nav__item"><a href="#tech" class="page-nav__link">Ремонтируемые устройства</a></li>
+              <li class="page-nav__item"><a href="#price" class="page-nav__link">Цены на услуги</a></li>
               <li class="page-nav__item"><a href="#" class="page-nav__link">Адреса сервисных центров</a></li>
               <li class="page-nav__item"><a href="#" class="page-nav__link">Специальные цены</a></li>
               <li class="page-nav__item"><a href="#" class="page-nav__link">Отзывы</a></li>
@@ -75,8 +75,6 @@
              <div class="content__text-container">
              <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
              <p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p><p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-             <p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p><p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-             <p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
              </div>
              <div class="content__read-more read-more">
                <label class="read-more__wrapper">
@@ -90,7 +88,7 @@
             </div>
         </div>
       </section>
-      <section class="slider main__brands">
+      <section class="slider main__brands" id="brands">
         <header class="slider__header">
           <div class="slider__title">Ремонт техники различных брендов</div>
         </header>
@@ -150,7 +148,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="slider main__tech">
+      <section class="slider main__tech" id="tech">
         <header class="slider__header">
           <div class="slider__title">Ремонт различных видов техники</div>
         </header>
@@ -340,7 +338,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="price-table">
+      <section class="price-table" id="price">
         <header class="price-table__header">
           <div class="price-table__title">Цены на услуги</div>
         </header>
@@ -390,10 +388,12 @@
             <div class="price-table__services">Замена программного обеспечения</div>
             <div class="price-table__price">1 000 ₽</div>
             <div class="price-table__time">30-120 мин</div>
+            <div class="price-table__link--wrapper">
             <a href="#" class="price-table__link">
               Заказать
               <img src="img/dropdown.svg">
             </a>
+            </div>
           </div>
         </div>
       </section>
@@ -433,7 +433,7 @@
     <nav class="aside__nav">
       <ul class="aside__list list-reset">
         <li class="aside__item"><a href="#" class="aside__link">Ремонт техники</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Услуги и сервисы</a></li>
+        <li class="aside__item"><a href="#" class="aside__link aside__link--active">Услуги и сервисы</a></li>
         <li class="aside__item"><a href="#" class="aside__link">Корпоративным клиентам</a></li>
         <li class="aside__item"><a href="#" class="aside__link">Продавцам техники</a></li>
         <li class="aside__item"><a href="#" class="aside__link">Партнерам</a></li>
@@ -445,12 +445,12 @@
     <footer class="aside__footer">
       <ul class="feedback list-reset aside__feedback">
         <li class="feedback__item">
-          <button class="button">
+          <button class="button callback-btn">
             <img src="img/call.svg" alt="call">
           </button>
         </li>
         <li class="feedback__item">
-          <button class="button">
+          <button class="button feedback-btn">
             <img src="img/chat.svg" alt="chat">
           </button>
         </li>
@@ -463,18 +463,53 @@
         <a href="mailto:mail@cps.com" class="aside__email">mail@cps.com</a>
         <a href="tel:8 800 890 8900" class="aside__phone">8 800 890 8900</a>
       <ul class="lang list-reset aside__lang">
-        <li class="lang__item">
-          <button class="button-reset">RU</button>
+        <li class="lang__item lang__item--active">
+          <button class="button lang__button--active">RU</button>
         </li>
         <li class="lang__item">
-          <button class="button-reset">EN</button>
+          <button class="button lang__button">EN</button>
         </li>
         <li class="lang__item">
-          <button class="button-reset">CH</button>
+          <button class="button lang__button">CH</button>
         </li>
       </ul>
     </footer>
   </aside>
+  <div class="modal-feedback">
+    <div class="modal-feedback__wrapper">
+    <button class="button modal-feedback__button">
+        <img src="img/burgerClose.svg" alt="close">
+    </button>
+      <h2 class="modal-feedback__title">Обратная связь</h2>
+      <form action="" class="modal-feedback__form">
+        <input type="text" name="name" class="modal-feedback__input" placeholder="Имя">
+        <input type="tel" class="modal-feedback__input" placeholder="Телефон">
+        <input type="email" class="modal-feedback__input" placeholder="Электронная почта">
+        <textarea class="modal-feedback__msg" placeholder="Сообщение"></textarea>
+        <span class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-feedback--text-color">политикой конфиденциальности</span></span>
+        <button class="button modal-feedback__send">
+          Отправить
+          <img src="img/dropdown.svg" alt="send">
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-feedback">
+    <div class="modal-feedback__wrapper">
+      <button class="button modal-feedback__button">
+        <img src="img/burgerClose.svg" alt="close">
+      </button>
+      <h2 class="modal-feedback__title">Заказать звонок</h2>
+      <form action="" class="modal-feedback__form">
+        <input type="tel" class="modal-feedback__input" placeholder="Телефон">
+        <span class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-feedback--text-color">политикой конфиденциальности</span></span>
+        <button class="button modal-feedback__send">
+          Отправить
+          <img src="img/dropdown.svg" alt="send">
+        </button>
+      </form>
+    </div>
+  </div>
 </div>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
