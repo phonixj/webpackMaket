@@ -1,1 +1,1 @@
-# webpackMaket
+https://phonixj.github.io/webpackMaket/
