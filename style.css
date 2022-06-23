@@ -779,8 +779,7 @@ template {
   border-radius: 6px;
   margin-left: 16px;
   background-color: #FFFFFF;
-  box-sizing: border-box;
-  transition: all 500ms; }
+  box-sizing: border-box; }
   @media (min-width: 768px) {
     .swiper-slide {
       max-width: 224px;
@@ -788,7 +787,8 @@ template {
   @media (min-width: 1120px) {
     .swiper-slide {
       max-width: 240px;
-      margin-left: 32px; }
+      margin-left: 32px;
+      transition: all 500ms; }
       .swiper-slide:hover {
         transform: scale(1.05);
         border: 1px solid #FF3E79; } }
