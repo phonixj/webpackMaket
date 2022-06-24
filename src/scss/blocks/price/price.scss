@@ -1,0 +1,60 @@
+.price{
+  @media (min-width: $tabletScreen){
+    display:none;
+  }
+  &__header{
+    background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
+    border-top: 1px solid #D9FFF5;
+    margin-top: 16px;
+  }
+  &__title{
+    Font-family: $font-family--regular;
+    Font-size: 16px;
+    Line-height: 24px;
+    Letter-spacing: -0.2px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  &__slide{
+    max-width: 260px;
+    min-height: 200px;
+    display: block;
+  }
+  &__link{
+    box-sizing: border-box;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: $font-family--bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    /*line-height: 32px;*/
+    /*padding-left: 12px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+  &__elem-text,
+  &__elem-title{
+    font-size: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  &__elem-title{
+    margin-top: 20px;
+    color: #7E7E82;
+    font-family: $font-family--medium;
+  }
+  &__elem-text{
+    font-family: $font-family--regular;
+    padding-top: 6px;
+  }
+}
