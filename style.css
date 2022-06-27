@@ -716,14 +716,70 @@ template {
 .swiper-pagination-bullet:not(:first-child) {
   margin-left: 8px !important; }
 
+@media (min-width: 768px) {
+  .price__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto; } }
+
+@media (min-width: 1440px) {
+  .price__wrapper {
+    margin-right: 32px;
+    margin-left: 32px; } }
+
+.price__table-title {
+  display: none; }
+  @media (min-width: 768px) {
+    .price__table-title {
+      display: flex;
+      font-family: TT Lakes-Medium, sans-serif;
+      font-size: 14px;
+      color: #7E7E82;
+      margin-left: 40px;
+      margin-bottom: 16px; } }
+  @media (min-width: 1440px) {
+    .price__table-title {
+      margin-left: 56px; } }
+
 .price__item {
   background-color: #FFFFFF;
-  max-width: 260px;
-  min-height: 200px;
+  width: 260px;
+  height: 200px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
   margin-left: 16px;
   box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .price__item {
+      width: auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      padding: 16px;
+      position: relative;
+      justify-content: space-between; }
+      .price__item:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px; }
+      .price__item:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px; }
+      .price__item:not(:last-child)::after {
+        content: '';
+        height: 1px;
+        width: 95%;
+        background-color: #EAEAEA;
+        position: absolute;
+        bottom: 0; } }
+  @media (min-width: 1440px) {
+    .price__item {
+      padding-left: 24px;
+      padding-right: 24px; } }
 
 .price__link {
   box-sizing: border-box;
@@ -736,28 +792,65 @@ template {
   font-family: TT Lakes-Bold, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
-  /*line-height: 32px;*/
+  line-height: 32px;
   /*padding-left: 12px;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
   bottom: 16px;
-  right: 16px; }
+  right: 16px;
+  transition: transform 200ms; }
+  @media (min-width: 768px) {
+    .price__link {
+      position: static;
+      min-width: 119px;
+      margin-left: auto; } }
+  @media (min-width: 1120px) {
+    .price__link:hover {
+      transform: scale(1.2); } }
 
 .price__elem-text, .price__elem-title {
   font-size: 14px;
   margin-left: 16px;
   margin-right: 16px; }
+  @media (min-width: 768px) {
+    .price__elem-text, .price__elem-title {
+      margin: 0; } }
 
 .price__elem-title {
   margin-top: 20px;
   color: #7E7E82;
   font-family: TT Lakes-Medium, sans-serif; }
+  @media (min-width: 768px) {
+    .price__elem-title {
+      display: none; } }
 
 .price__elem-text {
   font-family: TT Lakes, sans-serif;
   padding-top: 6px; }
+  @media (min-width: 768px) {
+    .price__elem-text {
+      padding: 0; }
+      .price__elem-text:nth-child(2) {
+        flex-basis: 450px; }
+      .price__elem-text:nth-child(4) {
+        flex-basis: 150px; }
+      .price__elem-text:nth-child(6) {
+        flex-basis: 170px; } }
+
+@media (min-width: 768px) {
+  .price__title-services {
+    flex-basis: 450px; } }
+
+@media (min-width: 768px) {
+  .price__title-price {
+    flex-basis: 150px; } }
+
+@media (min-width: 768px) {
+  .price__title-time {
+    flex-basis: 170px;
+    margin-right: 160px; } }
 
 .price-table {
   display: none;
@@ -1037,8 +1130,7 @@ template {
     margin-right: 24px; } }
   @media (min-width: 768px) and (min-width: 1120px) {
     .brands__wrapper {
-      padding-top: 4px;
-      padding-bottom: 4px;
+      padding: 8px;
       margin-right: 32px; } }
 
 @media (min-width: 768px) {
@@ -1117,8 +1209,7 @@ template {
     margin-right: 24px; } }
   @media (min-width: 768px) and (min-width: 1120px) {
     .tech__wrapper {
-      padding-top: 4px;
-      padding-bottom: 4px;
+      padding: 8px;
       margin-right: 32px; } }
 
 @media (min-width: 768px) {
