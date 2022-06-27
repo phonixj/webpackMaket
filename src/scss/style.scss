@@ -1,0 +1,42 @@
+@import "~normalize.css";
+@import "fonts";
+@import "variables";
+@import "reset";
+@import "blocks/container";
+@import "blocks/feedback";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/button";
+@import "blocks/content";
+@import "blocks/page-nav";
+@import "blocks/aside";
+@import "blocks/lang";
+@import "blocks/slider";
+@import "blocks/price";
+@import "blocks/price-table";
+@import "blocks/offer";
+@import "blocks/footer";
+@import "blocks/modal-feedback";
+@import "blocks/overlay";
+@import "blocks/brands";
+@import "blocks/section-header";
+@import "blocks/tech";
+@import "blocks/read-more";
+
+body{
+  background-color: #F8F8F8;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  @media (min-width: $laptopScreen) {
+    max-width: 1120px;
+    margin-left: 320px;
+  }
+}
+
+.rotate{
+  transform: rotate(180deg);
+}

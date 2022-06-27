@@ -1,0 +1,21 @@
+.read-more{
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    font-family: $font-family--medium;
+    font-size: 16px;
+    color: #1B1C21;
+    position: relative;
+    transition: transform 500ms;
+    @media (min-width: $laptopScreen){
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  &__img{
+    margin-right: 12px;
+  }
+  &--show{
+    height: 100%;
+  }
+}
