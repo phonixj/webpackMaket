@@ -1,17 +1,19 @@
-.price-table{
+.price-table {
   display: none;
   font-family: $font-family--regular;
   font-size: 14px;
-  @media (min-width: $tabletScreen){
+  @media (min-width: $tabletScreen) {
     display: block;
   }
-  &__header{
+
+  &__header {
     background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
     border-top: 1px solid #D9FFF5;
     margin-top: 16px;
     margin-bottom: 31px;
   }
-  &__title{
+
+  &__title {
     Font-family: $font-family--regular;
     Font-size: 16px;
     Line-height: 24px;
@@ -22,11 +24,12 @@
     padding-left: 24px;
     padding-bottom: 16px;
 
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       padding-left: 32px;
     }
   }
-  &__table{
+
+  &__table {
     display: flex;
     height: 324px;
     border-radius: 6px;
@@ -35,12 +38,13 @@
     margin-bottom: 24px;
     margin-right: 24px;
     flex-wrap: wrap;
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       margin-left: 32px;
       margin-right: 32px;
     }
   }
-  &__link{
+
+  &__link {
     box-sizing: border-box;
     width: 119px;
     height: 32px;
@@ -58,12 +62,13 @@
     justify-content: space-around;
     transition: transform 200ms;
     @media (min-width: $laptopScreen) {
-      &:hover{
+      &:hover {
         transform: scale(1.2);
       }
 
     }
   }
+
   &__row {
     display: flex;
     flex-basis: 100%;
@@ -72,37 +77,42 @@
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 16px;
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       margin-left: 24px;
       margin-right: 24px;
     }
+
     &:not(:last-child) {
       border-bottom: 1px solid #EAEAEA;
+    }
   }
-  }
-  &__services{
+
+  &__services {
     flex-basis: 380px;
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       flex-basis: 480px;
     }
   }
-  &__price{
+
+  &__price {
     flex-basis: 72px;
-    @media (min-width: $desktopScreen){
-      flex-basis:190px;
+    @media (min-width: $desktopScreen) {
+      flex-basis: 190px;
     }
   }
-  &__time{
+
+  &__time {
     flex-grow: 1;
     padding-left: 22px;
   }
-  &__table-header{
+
+  &__table-header {
     display: flex;
     margin-left: 40px;
     margin-bottom: 16px;
     color: #7E7E82;
     font-family: $font-family--medium;
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       margin-left: 56px;
     }
   }

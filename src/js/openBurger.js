@@ -17,3 +17,9 @@ closeBurger.addEventListener('click', function () {
   aside.classList.remove('aside--show');
   overlay.style.display = "none";
 });
+document.addEventListener('keydown', function (e) {
+  if (e.code === 'Escape') {
+    aside.classList.remove('aside--show');
+    overlay.style.display = "none";
+  }
+})

@@ -1,4 +1,10 @@
 .price {
+  &__title {
+    margin-bottom: 16px;
+    @media (min-width: $tabletScreen) {
+      margin-bottom: 24px;
+    }
+  }
   &__wrapper {
     @media (min-width: $tabletScreen) {
       display: flex;
@@ -7,7 +13,7 @@
       margin-right: 24px;
       width: auto;
     }
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       margin-right: 32px;
       margin-left: 32px;
     }
@@ -36,6 +42,7 @@
     border-radius: 6px;
     margin-left: 16px;
     box-sizing: border-box;
+    transition: border 500ms;
     @media (min-width: $tabletScreen) {
       width: auto;
       height: 64px;
@@ -69,6 +76,13 @@
       padding-left: 24px;
       padding-right: 24px;
     }
+
+    &:hover {
+      border: 1px solid #FF3E79;
+      @media (min-width: $tabletScreen) {
+        border: none;
+      }
+    }
   }
 
   &__link {
@@ -91,15 +105,18 @@
     bottom: 16px;
     right: 16px;
     transition: transform 200ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
     @media (min-width: $tabletScreen) {
       position: static;
       min-width: 119px;
       margin-left: auto;
     }
-    @media (min-width: $laptopScreen){
-      &:hover{
-        transform: scale(1.2);
-      }
+    @media (min-width: $laptopScreen) {
+
     }
   }
 
@@ -141,18 +158,21 @@
       }
     }
   }
-  &__title-services{
+
+  &__title-services {
     @media (min-width: $tabletScreen) {
       flex-basis: 450px;
     }
   }
-  &__title-price{
+
+  &__title-price {
     @media (min-width: $tabletScreen) {
       flex-basis: 150px;
 
     }
   }
-  &__title-time{
+
+  &__title-time {
     @media (min-width: $tabletScreen) {
       flex-basis: 170px;
       margin-right: 160px;

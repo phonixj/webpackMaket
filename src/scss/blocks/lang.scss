@@ -1,16 +1,17 @@
-.lang{
+.lang {
   display: flex;
   column-gap: 7px;
 
-  &__item{
-    font-family: $font-family--medium ;
+  &__item {
+    font-family: $font-family--medium;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
   }
-  &__button{
-    &--active{
+
+  &__button {
+    &--active {
       color: #7E7E82;
     }
   }

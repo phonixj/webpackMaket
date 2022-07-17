@@ -1,22 +1,24 @@
-.content{
- &__header{
-  @media (min-width: $laptopScreen){
-    display: flex;
-    justify-content: space-between;
-    margin-top: 21px;
+.content {
+  &__header {
+    @media (min-width: $laptopScreen) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 21px;
+    }
   }
- }
-  &__request{
+
+  &__request {
     display: none;
 
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       display: flex;
       align-items: center;
       margin-right: 32px;
       column-gap: 32px;
     }
   }
-  &__button{
+
+  &__button {
     display: flex;
     align-items: center;
     font-family: $font-family--medium;
@@ -24,34 +26,33 @@
     color: #1B1C21;
     column-gap: 8px;
   }
-  &__title{
-    font-family: $font-family--bold;
-    font-size: 28px;
-    color: #1B1C21;
+
+  &__title {
     margin-bottom: 24px;
     margin-left: 16px;
-    @media (min-width: $tabletScreen){
+    @media (min-width: $tabletScreen) {
       margin-left: 24px;
     }
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       margin-left: 32px;
     }
-    &:before{
+
+    &:before {
       content: "";
       position: relative;
       right: 18px;
       border-left: 5px solid #41F6D7;
       border-radius: 6px;
-      @media (min-width: $tabletScreen){
+      @media (min-width: $tabletScreen) {
         right: 26px;
       }
-      @media (min-width: $laptopScreen){
+      @media (min-width: $laptopScreen) {
         right: 34px;
       }
     }
   }
 
-  &__text-container{
+  &__text-container {
     font-family: $font-family--regular;
     font-size: 14px;
     color: #1B1C21;
@@ -60,37 +61,41 @@
     letter-spacing: 0.2px;
     overflow: hidden;
     height: 98px;
-    @media (min-width: $tabletScreen){
+    @media (min-width: $tabletScreen) {
       margin-left: 24px;
       height: 140px;
     }
     @media (min-width: $laptopScreen) {
       margin-left: 32px;
     }
-    &--show{
+
+    &--show {
       height: 100%;
     }
 
   }
-  &__read-more{
+
+  &__read-more {
     margin-top: 16px;
     margin-left: 24px;
     margin-bottom: 16px;
-    @media (min-width: $tabletScreen){
+    @media (min-width: $tabletScreen) {
       margin-left: 33px;
     }
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       margin-left: 40px;
     }
   }
-  &__wrapper{
-    @media (min-width: $tabletScreen){
+
+  &__wrapper {
+    @media (min-width: $tabletScreen) {
       display: flex;
       align-items: flex-start;
     }
   }
-  &__image{
-    @media (min-width: $tabletScreen){
+
+  &__image {
+    @media (min-width: $tabletScreen) {
       width: 360px;
       border-radius: 6px;
       margin-right: 24px;
@@ -98,5 +103,9 @@
     @media (min-width: $laptopScreen) {
       width: 530px;
     }
+  }
+
+  &__text {
+
   }
 }

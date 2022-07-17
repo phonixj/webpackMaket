@@ -1,8 +1,9 @@
-.feedback{
-  display:flex;
+.feedback {
+  display: flex;
   width: 152px;
   justify-content: space-between;
-  &__item{
+
+  &__item {
     height: 40px;
   }
 }

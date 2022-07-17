@@ -1,260 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Макет</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Макет</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link
-    rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    rel="stylesheet"
   />
 </head>
 <body>
 <div class="overlay"></div>
 <div class="container">
-  <div class="wrapper">
+  <div class="container__wrapper">
     <header class="header">
       <button class="button burger">
-        <img src="img/burger.svg" alt="burger">
+        <img alt="burger" src="img/burger.svg">
       </button>
-      <nav class="logo header__logo">
-      <a href="#" class="logo__link">
-        <img src="img/Group.svg" alt="logo">
+      <a class="logo header__logo" href="#">
+        <img alt="logo" src="img/Group.svg">
       </a>
-      </nav>
-
       <ul class="feedback header__feedback list-reset">
         <li class="feedback__item">
-          <button class="button header__btn-call">
-            <img src="img/call.svg" alt="call">
+          <button class="button js-modal-open" data-modal="call">
+            <img alt="call" src="img/call.svg">
           </button>
         </li>
         <li class="feedback__item">
-          <button class="button header__btn-chat">
-            <img src="img/chat.svg" alt="chat">
+          <button class="button js-modal-open" data-modal="chat">
+            <img alt="chat" src="img/chat.svg">
           </button>
         </li>
         <li class="feedback__item">
           <button class="button">
-            <img src="img/profile.svg" alt="profile">
+            <img alt="profile" src="img/profile.svg">
           </button>
         </li>
       </ul>
-      <div class="header__request">
-        <button class="button">
-          <img src="img/repair.svg" alt="repair">
-        </button>
-        <button class="button">
-          <img src="img/checkstatus.svg" alt="check">
-        </button>
-      </div>
+      <ul class="header__request list-reset">
+        <li>
+          <button class="button">
+            <img alt="repair" src="img/repair.svg">
+          </button>
+        </li>
+        <li>
+          <button class="button">
+            <img alt="check" src="img/checkstatus.svg">
+          </button>
+        </li>
+      </ul>
     </header>
     <main class="main">
       <section class="content">
         <div class="content__header">
-          <h1 class="content__title">Услуги и сервисы</h1>
-          <div class="content__request">
-          <button class="button content__button">
-            Оставить заявку
-            <img src="img/repair.svg" alt="repair" class="">
-          </button>
-          <button class="button content__button">
-            Статус ремонта
-            <img src="img/checkstatus.svg" alt="check" class="">
-          </button>
-        </div>
+          <h1 class="content__title main-title">Услуги и сервисы</h1>
+          <ul class="content__request list-reset">
+            <li>
+              <button class="button content__button">
+                Оставить заявку
+                <img alt="repair" class="" src="img/repair.svg">
+              </button>
+            </li>
+            <li>
+              <button class="button content__button">
+                Статус ремонта
+                <img alt="check" class="" src="img/checkstatus.svg">
+              </button>
+            </li>
+          </ul>
         </div>
         <nav class="page-nav">
           <ul class="page-nav__list">
-              <li class="page-nav__item"><a href="#brands" class="page-nav__link">Ремонтируемые бренды</a></li>
-              <li class="page-nav__item"><a href="#tech" class="page-nav__link">Ремонтируемые устройства</a></li>
-              <li class="page-nav__item"><a href="#price" class="page-nav__link">Цены на услуги</a></li>
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Адреса сервисных центров</a></li>
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Специальные цены</a></li>
-              <li class="page-nav__item"><a href="#" class="page-nav__link">Отзывы</a></li>
+            <li class="page-nav__item page-nav__item--active"><a class="page-nav__link" href="#brands">Ремонтируемые
+              бренды</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#tech">Ремонтируемые устройства</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#price">Цены на услуги</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">Адреса сервисных центров</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">Специальные цены</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">Отзывы</a></li>
           </ul>
         </nav>
         <div class="content__wrapper">
-           <div class="content__info">
-             <div class="content__text-container">
-             <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-             <p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p><p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-             </div>
-             <button class="content__read-more read-more">
-               <img src="img/icon.svg" class="read-more__img" alt="read more">
-               <span class="read-more__text">Читать далее</span>
-             </button>
-           </div>
-            <div class="content__main-image">
-                <img src="img/photo.png" alt="image" class="content__image">
+          <div class="content__info">
+            <div class="content__text-container">
+              <p class="content__text">Мы являемся авторизованным
+                сервисным центром по ремонту техники Dell. Только у нас
+                вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
+              <p class="content__text">Мы успешно работаем с 1992 года и
+                заслужили репутацию надежного партнера, что подтверждает
+                большое количество постоянных клиентов. Мы гордимся тем,
+                что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</p>
             </div>
+            <button class="content__read-more read-more" data-more="read-more">
+              <img alt="read more" class="read-more__img" src="img/icon.svg">
+            </button>
+          </div>
+          <div class="content__main-image">
+            <img alt="image" class="content__image" src="img/photo.png">
+          </div>
         </div>
       </section>
       <section class="main__brands brands" id="brands">
-        <header class="section-header">
-          <div class="section-header__title">Ремонт техники различных брендов</div>
-        </header>
+        <h2 class="section-header brands__title">Ремонт техники различных брендов</h2>
         <div class="swiper">
           <ul class="swiper-wrapper brands__wrapper list-reset">
             <li class="swiper-slide brands__item">
-              <img src="img/brands/Lenovo.svg" alt="lenovo" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="lenovo" class="brands__logo" src="img/brands/Lenovo.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/samsung.svg" alt="samsung" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="samsung" class="brands__logo" src="img/brands/samsung.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/apple.svg" alt="apple" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="apple" class="brands__logo" src="img/brands/apple.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/viewsonic.svg" alt="viewsonic" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="viewsonic" class="brands__logo" src="img/brands/viewsonic.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/bosch.svg" alt="bosch" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="bosch" class="brands__logo" src="img/brands/bosch.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/hp.svg" alt="hp" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="hp" class="brands__logo" src="img/brands/hp.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/acer.svg" alt="acer" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="acer" class="brands__logo" src="img/brands/acer.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/sony.svg" alt="sony" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="sony" class="brands__logo" src="img/brands/sony.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/sony.svg" alt="sony" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="sony" class="brands__logo" src="img/brands/sony.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/sony.svg" alt="sony" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="sony" class="brands__logo" src="img/brands/sony.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide brands__item">
-              <img src="img/brands/sony.svg" alt="sony" class="brands__logo">
-              <a href="#" class="brands__link">
-                <img src="img/back.svg" alt="link">
+              <img alt="sony" class="brands__logo" src="img/brands/sony.svg">
+              <a class="brands__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
           </ul>
-          <button class="brands__read-more read-more">
-            <img src="img/icon.svg" class="read-more__img" alt="read more">
-            <span class="read-more__text">Показать все</span>
+          <button class="brands__read-more read-more read-more--show-all" data-more="look-more">
+            <img alt="read more" class="read-more__img" src="img/icon.svg">
           </button>
           <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="tech main__tech" id="tech">
-        <header class="section-header">
-          <div class="section-header__title">Ремонт различных видов техники</div>
-        </header>
+        <h2 class="section-header tech__title">Ремонт различных видов техники</h2>
         <div class="swiper">
           <ul class="swiper-wrapper tech__wrapper list-reset">
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт планшетов</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ПК</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
             <li class="swiper-slide tech__item">
               <span class="tech__text">Ремонт ноутбуков</span>
-              <a href="#" class="tech__link">
-                <img src="img/back.svg" alt="link">
+              <a class="tech__link" href="#">
+                <img alt="link" src="img/back.svg">
               </a>
             </li>
           </ul>
-          <button class="tech__read-more read-more">
-            <img src="img/icon.svg" class="read-more__img" alt="read more">
-            <span class="read-more__text">Показать все</span>
+          <button class="tech__read-more read-more read-more--show-all" data-more="look-more">
+            <img alt="read more" class="read-more__img" src="img/icon.svg">
           </button>
           <div class="swiper-pagination "></div>
         </div>
       </section>
 
       <section class="price main__price" id="price">
-        <header class="section-header">
-          <div class="section-header__title">Цены на услуги</div>
-        </header>
+        <h2 class="section-header price__title">Цены на услуги</h2>
         <div class="swiper">
           <div class="price__table-title">
             <span class="price__title-services">Ремонтные услуги</span>
@@ -281,7 +310,7 @@
               <div class="price__elem-text">
                 30 мин
               </div>
-              <a href="#" class="price__link">
+              <a class="price__link" href="#">
                 Заказать
                 <img src="img/dropdown.svg">
               </a>
@@ -305,7 +334,7 @@
               <div class="price__elem-text">
                 30-120 мин
               </div>
-              <a href="#" class="price__link">
+              <a class="price__link" href="#">
                 Заказать
                 <img src="img/dropdown.svg">
               </a>
@@ -329,7 +358,7 @@
               <div class="price__elem-text">
                 30-120 мин
               </div>
-              <a href="#" class="price__link">
+              <a class="price__link" href="#">
                 Заказать
                 <img src="img/dropdown.svg">
               </a>
@@ -353,7 +382,7 @@
               <div class="price__elem-text">
                 30-120 мин
               </div>
-              <a href="#" class="price__link">
+              <a class="price__link" href="#">
                 Заказать
                 <img src="img/dropdown.svg">
               </a>
@@ -377,7 +406,7 @@
               <div class="price__elem-text">
                 30-120 мин
               </div>
-              <a href="#" class="price__link">
+              <a class="price__link" href="#">
                 Заказать
                 <img src="img/dropdown.svg">
               </a>
@@ -387,10 +416,12 @@
         </div>
       </section>
       <section class="offer">
-        <p class="offer__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-        <a href="#" class="offer__link">
+        <p class="offer__text">Все цены указаны с учетом НДС. Стоимость ремонта
+          указана на единичную услугу. Для получения коммерческого предложения
+          на постоянное обслуживание, оставьте заявку.</p>
+        <a class="offer__link" href="#">
           Получить коммерческое предложение
-          <img src="img/Line.svg" class="offer__img">
+          <img class="offer__img" src="img/Line.svg">
         </a>
       </section>
     </main>
@@ -399,58 +430,57 @@
         <span>© 2019 CPS</span>
         <span>Разработано командой Apesong</span>
       </p>
-        <p class="footer__text">Политика конфиденциальности</p>
-        <p class="footer__text">
-          Информация, размещенная на данной странице, не является публичной офертой
-        </p>
+      <p class="footer__text">Политика конфиденциальности</p>
+      <p class="footer__text">
+        Информация, размещенная на данной странице, не является публичной
+        офертой
+      </p>
     </footer>
   </div>
   <aside class="aside">
     <header class="aside__header">
       <button class="button aside__close-burger">
-        <img src="img/burgerClose.svg" alt="closeBurger">
+        <img alt="closeBurger" src="img/burgerClose.svg">
       </button>
-      <nav class="logo aside__logo">
-        <a href="#" class="logo__link">
-          <img src="img/Group.svg" alt="logo">
-        </a>
-      </nav>
+      <a class="aside__logo logo" href="#">
+        <img alt="logo" src="img/Group.svg">
+      </a>
       <button class="button">
-        <img src="img/search.svg" alt="search">
+        <img alt="search" src="img/search.svg">
       </button>
     </header>
-    <nav class="aside__nav">
-      <ul class="aside__list list-reset">
-        <li class="aside__item"><a href="#" class="aside__link">Ремонт техники</a></li>
-        <li class="aside__item"><a href="#" class="aside__link aside__link--active">Услуги и сервисы</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Корпоративным клиентам</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Продавцам техники</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Партнерам</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Производителям</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Наши сервисные центры</a></li>
-        <li class="aside__item"><a href="#" class="aside__link">Контакты</a></li>
+    <nav class="main-nav aside__nav">
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Ремонт техники</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Услуги и сервисы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Корпоративным клиентам</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Продавцам техники</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Партнерам</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Производителям</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Наши сервисные центры</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
       </ul>
     </nav>
     <footer class="aside__footer">
       <ul class="feedback list-reset aside__feedback">
         <li class="feedback__item ">
-          <button class="button callback-btn">
-            <img src="img/call.svg" alt="call">
+          <button class="button js-modal-open" data-modal="call">
+            <img alt="call" src="img/call.svg">
           </button>
         </li>
         <li class="feedback__item">
-          <button class="button feedback-btn">
-            <img src="img/chat.svg" alt="chat">
+          <button class="button js-modal-open" data-modal="chat">
+            <img alt="chat" src="img/chat.svg">
           </button>
         </li>
         <li class="feedback__item">
           <button class="button">
-            <img src="img/profile.svg" alt="profile">
+            <img alt="profile" src="img/profile.svg">
           </button>
         </li>
       </ul>
-        <a href="mailto:mail@cps.com" class="aside__email">mail@cps.com</a>
-        <a href="tel:8 800 890 8900" class="aside__phone">8 800 890 8900</a>
+      <a class="aside__email email" href="mailto:mail@cps.com">mail@cps.com</a>
+      <a class="aside__phone phone" href="tel:8 800 890 8900">8 800 890 8900</a>
       <ul class="lang list-reset aside__lang">
         <li class="lang__item lang__item--active">
           <button class="button lang__button--active">RU</button>
@@ -464,37 +494,43 @@
       </ul>
     </footer>
   </aside>
-  <div class="modal-feedback">
+  <div class="modal-feedback" data-modal="chat">
     <div class="modal-feedback__wrapper">
-    <button class="button modal-feedback__button">
-        <img src="img/burgerClose.svg" alt="close">
-    </button>
+      <button class="button modal-feedback__button js-modal-close">
+        <img alt="close" src="img/burgerClose.svg">
+      </button>
       <h2 class="modal-feedback__title">Обратная связь</h2>
-      <form action="#"  class="modal-feedback__form">
-        <input type="text" name="name" class="modal-feedback__input" placeholder="Имя">
-        <input type="tel" class="modal-feedback__input" placeholder="Телефон" >
-        <input type="email" class="modal-feedback__input" placeholder="Электронная почта">
+      <form action="#" class="modal-feedback__form">
+        <input class="modal-feedback__input" name="name" placeholder="Имя" type="text" data-modal="chat">
+        <input autofocus class="modal-feedback__input" placeholder="Телефон" type="tel">
+        <input class="modal-feedback__input" placeholder="Электронная почта" type="email">
         <textarea class="modal-feedback__msg" placeholder="Сообщение"></textarea>
-        <span class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-feedback--text-color">политикой конфиденциальности</span></span>
+        <span class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на
+          <span class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей
+          <span class="modal-feedback--text-color">политикой конфиденциальности</span>
+        </span>
         <button class="button modal-feedback__send">
           Отправить
-          <img src="img/dropdown.svg" alt="send">
+          <img alt="send" src="img/dropdown.svg">
         </button>
       </form>
     </div>
   </div>
-  <div class="modal-feedback">
+  <div class="modal-feedback" data-modal="call">
     <div class="modal-feedback__wrapper">
-      <button class="button modal-feedback__button">
-        <img src="img/burgerClose.svg" alt="close">
+      <button class="button modal-feedback__button js-modal-close">
+        <img alt="close" src="img/burgerClose.svg">
       </button>
       <h2 class="modal-feedback__title">Заказать звонок</h2>
       <form action="" class="modal-feedback__form">
-        <input type="tel" class="modal-feedback__input" placeholder="Телефон" >
-        <span class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-feedback--text-color">политикой конфиденциальности</span></span>
+        <input class="modal-feedback__input" placeholder="Телефон" type="tel" data-modal="call">
+        <span
+          class="modal-feedback__text">Нажимая “отправить”, вы даете согласие на <span
+          class="modal-feedback--text-color">обработку персональных данных</span> и соглашаетесь с нашей <span
+          class="modal-feedback--text-color">политикой конфиденциальности</span></span>
         <button class="button modal-feedback__send">
           Отправить
-          <img src="img/dropdown.svg" alt="send">
+          <img alt="send" src="img/dropdown.svg">
         </button>
       </form>
     </div>

@@ -1,4 +1,4 @@
-.modal-feedback{
+.modal-feedback {
   z-index: 2;
   width: 100%;
   max-width: 440px;
@@ -11,28 +11,32 @@
   right: 0;
   transform: translateX(120%);
   background-color: white;
-  &--show{
+
+  &--show {
     transform: translateX(0);
     box-shadow: -5px 0 50px -5px #7e7e82
   }
-  &__wrapper{
+
+  &__wrapper {
     padding-left: 16px;
     padding-top: 24px;
     padding-right: 16px;
-    @media (min-width: $tabletScreen){
+    @media (min-width: $tabletScreen) {
       padding-top: 32px;
       padding-left: 32px;
       padding-right: 32px;
     }
   }
-  &__button{
-    @media (min-width: $tabletScreen){
+
+  &__button {
+    @media (min-width: $tabletScreen) {
       position: absolute;
       top: 24px;
       left: -72px;
     }
   }
-  &__title{
+
+  &__title {
     font-family: $font-family--bold;
     font-size: 24px;
     margin-top: 40px;
@@ -40,18 +44,20 @@
       margin-top: 0;
       margin-bottom: 24px;
     }
-    &::before{
+
+    &::before {
       content: "";
       position: relative;
       border-left: 4px solid #41F6D7;
       border-radius: 0 6px 6px 0;
       left: -16px;
-      @media (min-width: $tabletScreen){
+      @media (min-width: $tabletScreen) {
         left: -32px;
       }
     }
   }
-  &__form{
+
+  &__form {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -59,7 +65,8 @@
     font-size: 16px;
     color: #B5B6BC;
   }
-  &__input{
+
+  &__input {
     width: 100%;
     max-width: 376px;
     box-sizing: border-box;
@@ -68,7 +75,8 @@
     border-radius: 8px;
     padding-left: 16px;
   }
-  &__msg{
+
+  &__msg {
     width: 100%;
     max-width: 376px;
     box-sizing: border-box;
@@ -79,10 +87,12 @@
     padding-top: 12px;
     resize: none;
   }
-  &__text{
-   font-size: 14px;
+
+  &__text {
+    font-size: 14px;
   }
-  &__send{
+
+  &__send {
     width: 136px;
     height: 32px;
     box-sizing: border-box;
@@ -98,7 +108,8 @@
     line-height: 32px;
     align-self: flex-end;
   }
-  &--text-color{
+
+  &--text-color {
     color: #FF3E79;
   }
 }

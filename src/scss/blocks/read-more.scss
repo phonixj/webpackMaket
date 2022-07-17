@@ -1,21 +1,39 @@
-.read-more{
-    border: 0;
-    background-color: transparent;
-    padding: 0;
-    font-family: $font-family--medium;
-    font-size: 16px;
-    color: #1B1C21;
-    position: relative;
-    transition: transform 500ms;
-    @media (min-width: $laptopScreen){
-      &:hover{
-        transform: scale(1.1);
-      }
-    }
-  &__img{
-    margin-right: 12px;
+.read-more {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  font-family: $font-family--medium;
+  font-size: 16px;
+  color: #1B1C21;
+  position: relative;
+  transition: transform 500ms;
+
+  &:hover {
+    transform: scale(1.1);
   }
-  &--show{
+
+  &__img {
+    margin-right: 12px;
+
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  &::after {
+    content: "Читать далее"
+  }
+
+  &--show {
     height: 100%;
   }
+
+  &--show-all::after {
+    content: "Показать все"
+  }
+
+  &--open::after {
+    content: "Скрыть"
+  }
+
 }

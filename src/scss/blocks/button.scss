@@ -1,9 +1,10 @@
-.button{
+.button {
   border: 0;
   background-color: transparent;
   padding: 0;
   transition: transform 500ms;
-  &:hover{
+
+  &:hover {
     transform: scale(1.1);
   }
 }

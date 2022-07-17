@@ -1,0 +1,6 @@
+.wrapper {
+  @media (min-width: $laptopScreen) {
+    max-width: 1120px;
+    margin-left: 320px;
+  }
+}

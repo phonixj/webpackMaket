@@ -1,0 +1,37 @@
+.main-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: $font-family--medium;
+    font-size: 16px;
+    transition: color 500ms;
+
+    &:hover {
+      color: #7E7E82;
+    }
+
+    &--active {
+      color: #7E7E82;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        //border-left: 4px solid #41F6D7;
+        border-radius: 0 6px 6px 0;
+        width: 4px;
+        height: 32px;
+        background-color: #41F6D7;
+        left: -24px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

@@ -1,8 +1,14 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
+  @media (min-width: $laptopScreen) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &__wrapper{
     @media (min-width: $laptopScreen) {
-      max-width: 1440px;
-      margin: 0 auto;
+      max-width: 1120px;
+      margin-left: 320px;
     }
+  }
 }

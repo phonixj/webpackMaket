@@ -1,36 +1,38 @@
-.page-nav{
+.page-nav {
   &__list::-webkit-scrollbar {
     display: none;
   }
-  &__list{
-    display:flex;
+
+  &__list {
+    display: flex;
     list-style-type: none;
     padding: 0;
     overflow-x: scroll;
     align-items: baseline;
     margin-left: 16px;
-    @media (min-width: $tabletScreen){
+    @media (min-width: $tabletScreen) {
       margin-left: 24px;
     }
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       margin-left: 32px;
       margin-top: 0;
     }
-    @media (min-width: $desktopScreen){
+    @media (min-width: $desktopScreen) {
       flex-wrap: wrap;
       row-gap: 8px;
     }
   }
 
-  &__item{
+  &__item {
     white-space: nowrap;
     padding: 8px 12px;
     border: 2px solid transparent;
-    @media (min-width: $laptopScreen){
+    @media (min-width: $laptopScreen) {
       padding: 8px 18px;
     }
-}
-  &__item:first-child{
+  }
+
+  &__item--active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background: #FFFFFF;
@@ -39,16 +41,14 @@
       background: transparent;
     }
   }
-  &__item:hover{
-    @media (min-width: $laptopScreen) {
-      &:hover{
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
-        background: #FFFFFF;
-      }
-    }
+
+  &__item:hover {
+      border: 2px solid #B8FFEC;
+      border-radius: 6px;
+      background: #FFFFFF;
   }
-  &__link{
+
+  &__link {
     text-decoration: none;
     font-family: $font-family--medium;
     font-size: 16px;
